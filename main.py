@@ -15,7 +15,7 @@ driver.get("https://www.scrapethissite.com/pages/simple/")
 print(datetime.datetime.now().time())
 # element = driver.find_element(By.XPATH, "//*[@id='main-content']/devsite-content/article/h1")
 WebDriverWait(driver,20).until(
-    ExCond.visibility_of_element_located(
+    ExCond.presence_of_element_located(
         (By.CLASS_NAME, 'country-name')
         )
     )
